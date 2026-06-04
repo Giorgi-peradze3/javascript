@@ -1,0 +1,35 @@
+.controls{
+    border: solid 2 px green;
+    width: 40%;
+    padding: 20px;
+    background-color: yellowgreen;
+    margin: 10px auto;
+}
+
+
+.container{
+    border: solid 2 px green;
+    width: 80%;
+    min-height: 80px;
+    padding: 20px;
+    background-color: yellowgreen;
+    margin: 10px auto;
+}
+
+
+.container .test {
+
+    width: 400px;
+    height: 200px;
+    background-color: red;
+
+
+
+}
+
+.new{
+    height: 50px;
+    width: 70px;
+    background-color: blue;
+    margin: 10px;
+}
