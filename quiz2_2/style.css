@@ -1,0 +1,16 @@
+
+.grid{
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 240px; 
+    gap: 5px; 
+    margin-top: 10px;
+}
+
+.divs{
+
+    display: flex;
+    gap: 5px; 
+    margin-top: 20px;
+
+}
