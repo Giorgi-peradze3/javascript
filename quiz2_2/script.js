@@ -104,51 +104,68 @@
 
 // task 3 
 
-function GenerateGrids(){
+function GenrateGrid(){
 
-    const grid = document.getElementById('grid');
-    const divs = document.getElementById('divs');
+    var cont = document.getElementsByClassName("cont")[0];
 
     
+    cont.innerHTML = '';
+    
+    for(let i = 0; i < 16; i++){
 
+        const cell = document.createElement("button");
 
-    for (let i = 0; i < 16; i++) {
-            const cell = document.createElement('div');
+        const num = Math.floor(Math.random() * 16) + 1;
+        cell.innerText = num;
+
+        cell.style.width = '45px';
+        cell.style.height = '45px';
+        cell.style.border = '1px solid black';
+        cell.style.textAlign = 'center';
+        cell.style.cursor = 'pointer';
+        cell.style.color = 'black';
+        cell.style.fontSize = '16px';
+        cell.style.margin = '4px';
+
+        cont.appendChild(cell);
+
+        cell.onclick = function(){
+
+            const BigDiv = document.createElement("div");
+
+            BigDiv.style.margin = '20px auto';
+            BigDiv.style.textAlign = 'center';
+            BigDiv.style.border = '1px solid black'; 
+            BigDiv.style.width = '100%';             
+            BigDiv.style.minHeight = '60px';         
+            BigDiv.style.padding = '20px';
+            BigDiv.style.display = 'flex'; 
+            BigDiv.style.flexWrap = 'wrap'; 
+            BigDiv.style.justifyContent = 'center';
+
+            cont.appendChild(BigDiv); 
+
             
-            
-            const num = Math.floor(Math.random() * 16) + 1;
-            cell.innerText = num;
+            BigDiv.innerHTML = ''; 
 
-            console.log(cell)
-            console.log(num)
-            cell.style.width = '45px';
-            cell.style.height = '45px';
-            cell.style.border = '1px solid black';
-            cell.style.textAlign = 'center';
-            cell.style.cursor = 'pointer';
+            for(let j = 0; j < num; j++){
 
-            
-            
-            divs.innerHTML = ''; 
-
+                const div = document.createElement("div");
                 
-            for (let j = 0; j < num; j++) {
-                const newDiv = document.createElement('button');
-                newDiv.innerText = j + 1;
-                    
-                console.log(newDiv)
-                newDiv.style.width = '40px';
-                newDiv.style.height = '40px';
-                newDiv.style.backgroundColor = 'red';
-                newDiv.style.color = 'white';
-                newDiv.style.textAlign = 'center';
+                div.style.width = '40px';
+                div.style.height = '40px';
+                div.style.backgroundColor = 'red';
+                div.style.color = 'white';
+                div.style.textAlign = 'center';
+                div.style.lineHeight = '40px'; 
+                div.style.margin = '5px';
+                
+                
 
-                divs.appendChild(newDiv);
+                BigDiv.appendChild(div);
             }
-
-            
-
         }
+    }
 }
 
-GenerateGrids()
+GenrateGrid();
