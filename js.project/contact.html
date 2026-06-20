@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>კონტაქტი - Home.ge</title>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Home<span>.ge</span></div>
+    <nav>
+      <a href="index.html">მთავარი</a>
+      <a href="#">განცხადებები</a>
+      <a href="contact.html" class="active">კონტაქტი</a>
+    </nav>
+  </header>
+
+  
+  <main class="contact-container">
+    
+    
+    <section class="contact-info">
+      <h2>საკონტაქტო ინფორმაცია</h2>
+      <p>გაქვთ კითხვები? ჩვენი გუნდი მზად არის დაგეხმაროთ უძრავი ქონების ყიდვა-გაყიდვასთან დაკავშირებით.</p>
+      
+      <div class="info-links">
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <p>ტელეფონი</p>
+            <span>+995 32 2 XX XX XX</span>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <p>ელ-ფოსტა</p>
+            <span>info@home.ge</span>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <p>მისამართი</p>
+            <span>თბილისი, ი. ჭავჭავაძის გამზირი</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="social-medias">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </section>
+
+   
+    <section class="contact-form-wrapper">
+      <h2>მოგვწერეთ</h2>
+      <form id="contactForm">
+        <div class="input-group">
+          <label for="name">სახელი, გვარი</label>
+          <input type="text" id="name" required placeholder="მაგ: გიორგი ბერიძე">
+        </div>
+
+        <div class="input-group">
+          <label for="email">ელ-ფოსტა</label>
+          <input type="email" id="email" required placeholder="example@mail.com">
+        </div>
+
+        <div class="input-group">
+          <label for="message">შეტყობინება</label>
+          <textarea id="message" rows="5" required placeholder="ჩაწერეთ თქვენი შეტყობინება..."></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">გაგზავნა</button>
+        <p id="formStatus" class="status-msg"></p>
+      </form>
+    </section>
+
+    
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      
+      
+      <div class="footer-section about">
+        <div class="logo">Home<span>.ge</span></div>
+        <p>ყველაზე სანდო და მარტივი პლატფორმა უძრავი ქონების ბაზარზე საქართველოში.</p>
+      </div>
+
+      
+      <div class="footer-section links">
+        <h3>ნავიგაცია</h3>
+        <ul>
+          <li><a href="index.html">მთავარი</a></li>
+          <li><a href="#">განცხადებები</a></li>
+          <li><a href="#">სააგენტოები</a></li>
+          <li><a href="#">წესები და პირობები</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="footer-section social">
+        <h3>შემოგვიერთდით</h3>
+        <div class="footer-social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Home.ge. ყველა უფლება დაცულია.</p>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

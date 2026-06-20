@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home.ge - უძრავი ქონება</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="navbar">
+        <div class="logo">HOME<span>.GE</span></div>
+        <nav>
+            <a href="index.html" data-key="nav_home">მთავარი</a>
+            <a href="about.html" data-key="nav_about">ჩვენს შესახებ</a>
+            <a href="contact.html" data-key="nav_contact">კონტაქტი</a>
+            <a href="profile.html" class="profile"   data-key="profile"><i class="fa-regular fa-circle-user"></i></a>
+            <button id="lang-toggle" class="lang-btn">English</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-key="hero_title">იპოვნე შენი ოცნების სახლი</h1>
+            <div class="search-container">
+                <select>
+                    <option data-key="opt_buy">ყიდვა</option>
+                    <option data-key="opt_rent">ქირაობა</option>
+                </select>
+                <input type="text" placeholder="თბილისი, ბათუმი..." data-placeholder="search_placeholder">
+                <button data-key="search_btn">ძებნა</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 data-key="section_title" class="section-title">ბოლო განცხადებები</h2>
+        
+        <div class="listings-grid">
+            <div class="card">
+                <div class="card-img" style="background-image: url(images/photo-1560448204-e02f11c3d0e2.avif)"></div>
+                <div class="card-body">
+                    <h3 data-key="card1_title">3-ოთახიანი ბინა საბურთალოზე</h3>
+                    <p class="price" data-key="card1_price">120,000 $</p>
+                    <p data-key="card1_desc">ნათელი ბინა ახალაშენებულ კორპუსში, ავეჯითა და ტექნიკით.</p>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url(images/photo-1512917774080-9991f1c4c750.avif)"></div>
+                <div class="card-body">
+                    <h3 data-key="card2_title">საკუთარი სახლი წყნეთში</h3>
+                    <p class="price" data-key="card2_price">350,000 $</p>
+                    <p data-key="card2_desc">დიდი ეზოთი, ლამაზი ხედებითა და მყუდრო გარემოთი.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(images/photo-1512917774080-9991f1c4c750.avif)"></div>
+                <div class="card-body">
+                    <h3 data-key="card2_title">საკუთარი სახლი წყნეთში</h3>
+                    <p class="price" data-key="card2_price">350,000 $</p>
+                    <p data-key="card2_desc">დიდი ეზოთი, ლამაზი ხედებითა და მყუდრო გარემოთი.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(images/photo-1560448204-e02f11c3d0e2.avif)"></div>
+                <div class="card-body">
+                    <h3 data-key="card1_title">3-ოთახიანი ბინა საბურთალოზე</h3>
+                    <p class="price" data-key="card1_price">120,000 $</p>
+                    <p data-key="card1_desc">ნათელი ბინა ახალაშენებულ კორპუსში, ავეჯითა და ტექნიკით.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(images/photo-1560448204-e02f11c3d0e2.avif)"></div>
+                <div class="card-body">
+                    <h3 data-key="card1_title">3-ოთახიანი ბინა საბურთალოზე</h3>
+                    <p class="price" data-key="card1_price">120,000 $</p>
+                    <p data-key="card1_desc">ნათელი ბინა ახალაშენებულ კორპუსში, ავეჯითა და ტექნიკით.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(images/photo-1512917774080-9991f1c4c750.avif)"></div>
+                <div class="card-body">
+                    <h3 data-key="card2_title">საკუთარი სახლი წყნეთში</h3>
+                    <p class="price" data-key="card2_price">350,000 $</p>
+                    <p data-key="card2_desc">დიდი ეზოთი, ლამაზი ხედებითა და მყუდრო გარემოთი.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+    <div class="footer-content">
+      
+      
+      <div class="footer-section about">
+        <div class="logo">Home<span>.ge</span></div>
+        <p>ყველაზე სანდო და მარტივი პლატფორმა უძრავი ქონების ბაზარზე საქართველოში.</p>
+      </div>
+
+      
+      <div class="footer-section links">
+        <h3>ნავიგაცია</h3>
+        <ul>
+          <li><a href="index.html">მთავარი</a></li>
+          <li><a href="#">განცხადებები</a></li>
+          <li><a href="#">სააგენტოები</a></li>
+          <li><a href="#">წესები და პირობები</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="footer-section social">
+        <h3>შემოგვიერთდით</h3>
+        <div class="footer-social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Home.ge. ყველა უფლება დაცულია.</p>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
