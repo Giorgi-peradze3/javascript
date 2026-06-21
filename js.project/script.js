@@ -10,7 +10,9 @@ const translations = {
         search_placeholder: "თბილისი, ბათუმი...",
         search_btn: "ძებნა",
         section_title: "ბოლო განცხადებები",
-        
+        section_title1: "ასევე პოპულარულები",
+
+
         card1_title: "3-ოთახიანი ბინა საბურთალოზე",
         card1_price: "120,000 $",
         card1_desc: "ნათელი ბინა ახალაშენებულ კორპუსში, ავეჯითა და ტექნიკით.",
@@ -30,6 +32,7 @@ const translations = {
         search_placeholder: "Tbilisi, Batumi...",
         search_btn: "Search",
         section_title: "Recent Listings",
+        section_title1: "Also Popular",
         
         card1_title: "3-Room Apartment in Saburtalo",
         card1_price: "$ 120,000",
@@ -75,3 +78,39 @@ langToggleBtn.addEventListener('click', () => {
     currentLang = currentLang === 'ka' ? 'en' : 'ka';
     changeLanguage(currentLang);
 });
+
+
+
+
+
+const images = document.querySelectorAll('.slider-img');
+const controlls = document.querySelectorAll('.controlls');
+let imageIndex = 0;
+
+function show(index) {
+    images[imageIndex].classList.remove('active');
+    images[index].classList.add('active');
+    imageIndex = index;
+}
+
+controlls.forEach((e) => {
+    e.addEventListener('click', () => {
+        if (event.target.classList.contains('prev')) {
+            let index = imageIndex - 1;
+
+            if (index < 0) {
+                index = images.length - 1;
+            }
+
+            show(index);
+        } else if (event.target.classList.contains('next')) {
+            let index = imageIndex + 1;
+            if (index >= images.length) {
+                index = 0;
+            }
+            show(index);
+        }
+    })
+})
+
+show(imageIndex);
